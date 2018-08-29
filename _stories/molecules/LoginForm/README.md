@@ -1,7 +1,7 @@
 **NOTE:** The minimum DS version required for this component to render properly is: **1.3.5**
 
 The `<LoginForm>`, as the name implies, renders a form that can be customized to look like any of [these prototypes](http://ds.gumgum.com/stable/#gds-account-modal).
-This component can display GumGum's logo, the Product name (underneath GumGum's logo), a Cap with text above the form fields and a link for password recovery. The form inputs and submit buttons must be provided.
+This component can display the Product name (underneath GumGum's logo), a Cap with text above the form fields and a link for password recovery. If you do not want to show GumGum's logo, you can pass the prop `hideLogo`. The form inputs and submit buttons must be provided.
 
 All of its atoms are optional.
 
@@ -13,7 +13,7 @@ prop name   | description
 ------------|------------
 capText         | Text to display in the cap between the logo and form.
 logoText        | Product name, shown right below GumGum's logo
-showLogo        | Boolean indicating whether or not you would like to show GumGum's logo
+hideLogo        | Boolean indicating whether or not you would like to hide GumGum's logo
 onSubmit        | (Required) function called on form submition
 recoveryFn      | Callback used to redirect to a password recovery page
 recoveryText    | Text to show for password recovery, defauts to "Forgot your password?"

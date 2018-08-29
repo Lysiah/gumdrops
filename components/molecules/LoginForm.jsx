@@ -7,14 +7,14 @@ const wrapperStyle = { position: 'relative' };
 const LoginForm = ({
     capText,
     children,
-    showLogo,
+    hideLogo,
     logoText,
     onSubmit,
     recoveryFn,
     recoveryText
 }) => (
     <div
-        className={cx('gds-account-modal', { 'gds-account-modal--logo': showLogo })}
+        className={cx('gds-account-modal', { 'gds-account-modal--logo': !hideLogo })}
         style={wrapperStyle}>
         <div className="gds-account-modal__form gds-card -p-t-3-sm -p-t-0">
             {logoText && <div className="gds-account-modal__logo-product">{logoText}</div>}
@@ -41,7 +41,7 @@ LoginForm.defaultProps = {
     capText: '',
     logoText: '',
     recoveryText: 'Forgot your password?',
-    showLogo: true
+    hideLogo: false
 };
 
 LoginForm.propTypes = {
@@ -51,7 +51,7 @@ LoginForm.propTypes = {
     onSubmit: PropTypes.func.isRequired,
     recoveryFn: PropTypes.func,
     recoveryText: PropTypes.string,
-    showLogo: PropTypes.bool
+    hideLogo: PropTypes.bool
 };
 
 export default LoginForm;
