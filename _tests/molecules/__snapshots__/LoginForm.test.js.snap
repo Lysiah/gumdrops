@@ -7,6 +7,7 @@ exports[`Expect <LoginForm> to render 1`] = `
   onSubmit={[Function]}
   recoveryFn={[Function]}
   recoveryText="Recovery message"
+  showLogo={true}
 >
   <div
     className="gds-account-modal gds-account-modal--logo"
