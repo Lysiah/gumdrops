@@ -10,7 +10,7 @@ exports[`Expect <LoginForm> to render 1`] = `
   recoveryText="Recovery message"
 >
   <div
-    className="gds-account-modal"
+    className="gds-account-modal gds-account-modal--logo"
     style={
       Object {
         "position": "relative",
